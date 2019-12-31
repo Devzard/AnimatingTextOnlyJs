@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("./background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+h1,
+h2,
+h3 {
+  color: white;
+  font-size: 4 rem;
+  font-family: sans-serif;
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+span {
+  opacity: 0;
+  transition: all 1.5s ease;
+  transform: translateY(200px);
+  display: inline-block;
+}
+span.fade {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "title"
+    "new"
+    "year"
+    "t"
+    "from"
+    "author";
+}
+.title {
+  grid-area: title;
+}
+.author {
+  grid-area: author;
+}
+.new {
+  grid-area: new;
+}
+.year {
+  grid-area: year;
+}
+.t {
+  grid-area: t;
+}
+.from {
+  grid-area: from;
+}
